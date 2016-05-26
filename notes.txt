@@ -1,0 +1,30 @@
+Due 03 June
+
+Need to:
+1. Formulate mathematical model .
+2. Write code to generate .lp file .
+3. Use CPLEX to solve optimization problems and generate solutions .
+4. Write a report describing problem and solutions .
+
+Assignment is based on sections 7.4 (7.4.1,7.4.2), and 5.2.6 .
+With;
+ - X, Si: source nodes .
+ - Y, Tk: transit nodes .
+ - Z, Dj: destination nodes .
+ - Link capacities Cik, Dkj, as the link capacities between specific nodes .
+     (Cik, as link of source<->transit)
+     (Dkj, as link of transit<->destination)
+ - Demand volumes Hij, as the demand volume between Si<->Dj .
+     Values are Hij = i + j
+     Demand volumes are split over 3 different paths (read, transit nodes) .
+ - Flow volumes Xikj as the share of a demand volume over path Si<->Tk<->Dj .
+     For each H, have a set of variables k1..kY of which exactly 3 
+      are positive, and all others are zero.
+     Xikj are our decision variables.
+
+
+1.  Code to generate .lp file
+ - Objective is load balancing.
+ - Optimization is done for generic X,Y,Z E(Z+), Y >= 3 .
+
+2.  CPLEX solving
