@@ -28,3 +28,8 @@ With;
  - Optimization is done for generic X,Y,Z E(Z+), Y >= 3 .
 
 2.  CPLEX solving
+ - Code generates a matrix of demand volumes .
+ - Code generates all possible links .
+ - Code generates CPLEX constraints for volume splitting, and capacities .
+ - Code generates optimization function and decision variables .
+
