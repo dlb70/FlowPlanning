@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-cplex -c "read $1" "optimize" "display solution variables -"
+cplex -c "read $1" "optimize" "display solution variables -" 
