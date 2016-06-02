@@ -6,11 +6,11 @@ for Y in {3..7}; do
     #time cplex -c "read default.lp" "optimize" "display solution variables -" > "output$Y.txt"
 done
 
-rm out.txt
+#rm out.txt
 for Y in {3..7}; do
-    echo "$Y" >> out.txt
-    python3 process.py output$Y.txt >> out.txt
-    echo >> out.txt
+    echo "$Y" 
+    python3 process.py output$Y.txt 
+    echo 
 done
 
 rm output*.txt
