@@ -1,0 +1,50 @@
+3
+Load 1: 130.666667
+Load 2: 130.666667
+Load 3: 130.666667
+Maximum capacity link: 25.666667
+Non-zero capacity links: 42
+Time: 0.004
+
+4
+Load 1: 97.999999
+Load 2: 98.000001
+Load 3: 98.000001
+Load 4: 98.0
+Maximum capacity link: 25.666667
+Non-zero capacity links: 56
+Time: 0.176
+
+5
+Load 1: 78.0
+Load 2: 78.33333400000001
+Load 3: 78.333333
+Load 4: 78.666665
+Load 5: 78.666669
+Maximum capacity link: 25.666667
+Non-zero capacity links: 69
+Time: 0.096
+
+6
+Load 1: 65.33333499999999
+Load 2: 65.333333
+Load 3: 65.333333
+Load 4: 65.333332
+Load 5: 65.33333400000001
+Load 6: 65.333334
+Maximum capacity link: 22.666667
+Non-zero capacity links: 81
+Time: 0.220
+
+7
+Load 1: 56.0
+Load 2: 56.0
+Load 3: 56.0
+Load 4: 56.0
+Load 5: 56.0
+Load 6: 56.00000000000001
+Load 7: 56.00000099999999
+Maximum capacity link: 23.0
+Non-zero capacity links: 95
+Time: 0.276
+
