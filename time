@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+time cplex -c "read default.lp" "optimize" "display solution variables -" > "output$1.txt"

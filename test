@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+for Y in {3..7}; do
+    python3 generate.py 7 $Y 7 > default.lp
+    ./time $Y 2>> output$Y.txt
+    #time cplex -c "read default.lp" "optimize" "display solution variables -" > "output$Y.txt"
+done
+
+rm out.txt
+for Y in {3..7}; do
+    echo "$Y" >> out.txt
+    python3 process.py output$Y.txt >> out.txt
+    echo >> out.txt
+done
+
+rm output*.txt
+rm *.log
+rm default.lp
