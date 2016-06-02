@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
 
+#
+# Invocation:   $ python3 generate.py X Y Z > out.lp
+#               $ ./generate.py X Y Z > out.lp
+#
+# Prints to standard out. Pipe into file to run in cplex.
+#
+
 import sys
 
 def getXYZ():
