@@ -83,26 +83,27 @@ def printXVconstraints(x, y, z):
 
 def printConstraints(x, y, z, n=3):
     print("Subject To")
-    printDVconstraints(x,y,z)
-    printBNconstraints(x,y,z,n)
     printDFconstraints(x,y,z,n)
     printLCconstraints(x,y,z)
     printXVconstraints(x,y,z)
+    printDVconstraints(x,y,z)
+    printBNconstraints(x,y,z,n)
 
 def printBounds(x, y, z):
     # All links must be non-zero
     print("Bounds")
+    for i in range(1, x+1):
+        for j in range(1, z+1):
+            for k in range(1, y+1):
+                l = "{}{}{}".format(i,k,j)
+                print("    x{} >= 0".format(l,l))
     for i in range(1, x+1):
         for k in range(1, y+1):
             print("    c{2}{3} >= 0".format(i,k,i,k))
     for j in range(1, z+1):
         for k in range(1, y+1):
             print("    d{2}{3} >= 0".format(k,j,k,j))
-    for i in range(1, x+1):
-        for j in range(1, z+1):
-            for k in range(1, y+1):
-                l = "{}{}{}".format(i,k,j)
-                print("    x{} >= 0".format(l,l))
+    print("    r >= 0")
 
 def printBinaries(x, y, z):
     print("Binaries")
