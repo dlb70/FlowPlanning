@@ -24,7 +24,7 @@ while (l != ''):
     if (not start):
         if l.startswith("Variable Name"):
             start = True
-    elif l.startswith("user"): # run time "user"
+    elif l.startswith("real"): # run time "user"
         time = l.strip('s\n').split('m')[-1]
     elif l.startswith('r'): # Objective value - r
         r = l.strip('\n').split(' ')[-1]
